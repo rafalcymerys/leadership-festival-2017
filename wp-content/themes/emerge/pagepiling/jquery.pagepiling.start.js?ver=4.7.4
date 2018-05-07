@@ -1,0 +1,27 @@
+jQuery(document).ready(function($) {
+	if($('.current-menu-item').length>1)$('.current-menu-item').removeClass('current-menu-item');
+	if($('.current_page_item').length>1)$('.current_page_item').removeClass('current_page_item');
+	$('LI[class^="data-menuanchor-"]').each(function(){
+		var klasy=this.className.split(/\s+/);
+		for(id in klasy)
+			if(klasy[id].indexOf('data-menuanchor-')==0)
+				$(this).removeClass(klasy[id]).attr('data-menuanchor',klasy[id].substring(('data-menuanchor-').length));
+	});
+	$('#pagepiling').pagepiling({
+		menu: '#menu-menu-glowne',
+		anchors: ['intro', 'purpose', 'results', 'who-are-we-looking-for', 'programme', 'location', 'speakers', 'partners', 'tickets', 'five-carousel', 'community', 'backers'],
+		afterRender: function(){
+			//$('.navbar').addClass('hide-menu');
+			$('.mail-circle-icon').addClass('mail-main');
+		},
+		afterLoad: function(anchorLink, index){
+			if(index>1){
+				//$('.navbar').removeClass('hide-menu');
+				$('.mail-circle-icon').removeClass('mail-main');
+			}else{
+				//$('.navbar').addClass('hide-menu');
+				$('.mail-circle-icon').addClass('mail-main');
+			}
+		}
+	});
+});

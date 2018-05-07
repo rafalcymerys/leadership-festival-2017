@@ -1,0 +1,60 @@
+/*
+Theme Name: Emerge
+Author: RECT.pl
+Description: Skórka dla Emerge
+Version: 1.0.0
+
+*/
+
+.customize-support .navbar-fixed-top {
+	top: 32px;
+}
+
+.current-menu-item .hvr-underline-from-left:before {
+  right: 0;
+}
+
+.nav .current-menu-item a {
+	color: #000;
+}
+
+a.current-menu-item {
+	text-decoration: none;
+	color: inherit;
+}
+.nav .social-but a.hvr-underline-from-left:hover, 
+.nav .social-but a.hvr-underline-from-left:focus {
+    background: transparent;
+    color: #000;
+}
+.nav .social-but a.hvr-underline-from-left:before {
+    display: none;
+}
+
+#speakers .big-button {
+    bottom: 9vh;
+}
+
+@media (orientation: portrait) {
+.playfield { display: none; }
+.portrait-overlay { display: block; }
+}
+@media (orientation: landscape) {
+.playfield { display: block; }
+.portrait-overlay { display: none; }
+}
+
+.portrait-overlay {
+width: 100%;
+height: 100vh;
+font-size: 3vh;
+text-align: center;
+padding: 10vh;
+}
+
+.portrait-overlay img {
+width: 20%;
+height: auto;
+display: block;
+margin: 40px auto;
+}

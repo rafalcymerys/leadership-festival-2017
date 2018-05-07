@@ -1,0 +1,70 @@
+jQuery(window).mousemove(function(event) {
+  jQuery(".move-obj .circle-01").css({
+    "margin-left": -(event.pageX * 0.1),
+    "margin-top": -(event.pageY * 0.1)
+  });
+  jQuery(".move-obj .circle-03").css({
+    "margin-left": -(event.pageX * 0.2),
+    "margin-top": -(event.pageY * 0.2)
+  });
+  jQuery(".move-obj .circle-02").css({
+    "margin-left": -(event.pageX * 0.3),
+    "margin-top": -(event.pageY * 0.3)
+  });
+  jQuery(".move-obj .circle-05").css({
+    "margin-left": -(event.pageX * 0.1),
+    "margin-top": -(event.pageY * 0.1)
+  });
+  jQuery(".move-obj .circle-04").css({
+    "margin-left": -(event.pageX * 0.2),
+    "margin-top": -(event.pageY * 0.2)
+  });
+  jQuery(".move-obj .circle-06").css({
+    "margin-left": -(event.pageX * 0.3),
+    "margin-top": -(event.pageY * 0.3)
+  });
+	jQuery(".left-01").css({
+    "margin-left": -(event.pageX * 0.1)
+  });
+  jQuery(".right-01").css({
+    "margin-left": -(event.pageX * 0.05)
+  });
+	jQuery(".middle-01").css({
+    "margin-left": -(event.pageX * 0.2),
+    "margin-top": -(event.pageY * 0.2)
+  });
+});
+
+jQuery(function($) {
+	$('.eq-col').matchHeight();
+});
+
+
+jQuery('.carousel').carousel({
+    interval: false,
+})
+
+jQuery('#five-carousel').on('slid.bs.carousel', checkitem);
+
+function checkitem()                        // check function
+{
+    var $this = jQuery('#five-carousel');
+    if (jQuery('.carousel-inner .item:first').hasClass('active')) {
+        $this.children('.left.carousel-control').hide();
+    } else if (jQuery('.carousel-inner .item:last').hasClass('active')) {
+        $this.children('.right.carousel-control').hide();
+    } else {
+        $this.children('.carousel-control').show();
+
+    }
+}
+jQuery(function($) {
+	checkitem();
+});
+
+
+jQuery('.navbar-collapse a').on('click', function(){
+    if ( jQuery( '.navbar-collapse' ).hasClass('in') ) {
+        jQuery('.navbar-toggle').click();
+    }
+});
