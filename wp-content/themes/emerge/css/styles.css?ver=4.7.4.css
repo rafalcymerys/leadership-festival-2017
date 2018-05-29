@@ -3,7 +3,7 @@ body {
     height: 100%;
 }
 
-button:focus { 
+button:focus {
     outline:0 !important;
 }
 
@@ -12,7 +12,7 @@ button:focus {
 }
 
 * {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important; 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
 }
 
 body {
@@ -32,7 +32,7 @@ body {
 	color: #FFF;
 }
 
-button:focus { 
+button:focus {
 	outline:0 !important;
 }
 
@@ -41,7 +41,7 @@ button:focus {
 }
 
 * {
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important; 
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
 }
 
 input[type=text]:focus, textarea:focus {
@@ -294,7 +294,7 @@ svg {
 	font-weight: 500;
 	position: absolute;
 	line-height: 100%;
-	color: #FFF;
+	color: #000;
 	text-align: right;
 	z-index: 9;
 }
@@ -812,7 +812,7 @@ display: block;
     transform: translateY(-50%);
 }
 
-/* SECTION 6 */ 
+/* SECTION 6 */
 
 #section6 {
 	background-color: #FFF;
@@ -1173,7 +1173,7 @@ background-color: #FFF;
 	-o-transform: scale(1.05);
 	transform: scale(1.05);
 	z-index: 999;
-}	
+}
 
 #tickets .ticket-list .ticket.first {
 	background-color: #FFD23F;
@@ -1714,7 +1714,7 @@ margin-right: 10px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 	}
-	
+
 .mail-circle-icon {
 position: fixed;
 bottom: 3vh;
