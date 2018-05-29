@@ -587,7 +587,7 @@ display: block;
 }
 
 #section3 .main-text {
-	font-size: 2.4vh;
+	font-size: 1.6vh;
 	text-align: center;
 	width: 60vw;
 	left: 20vw;
@@ -638,11 +638,6 @@ display: block;
 	padding: 2vh 4%;
 	text-align: left;
 	position: relative;
-}
-
-#section3 .col-50:nth-child(even) {
-	width: 43%;
-	margin-left: 7%;
 }
 
 #section3 .col-50 .icon {
